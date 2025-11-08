@@ -1,0 +1,75 @@
+main.temporadas {
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.selector-temporadas {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.btn-temporada {
+  background-color: rgba(255,255,255,0.1);
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-weight: bold;
+}
+
+.btn-temporada:hover,
+.btn-temporada.activa {
+  background-color: #e50914;
+  transform: scale(1.05);
+}
+
+.contenedor-capitulos {
+  width: 100%;
+  max-width: 1500px;
+}
+
+.lista-capitulos {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.lista-capitulos.activa {
+  display: flex;
+  opacity: 1;
+}
+
+.capitulo {
+  background-color: rgba(255,255,255,0.08);
+  border-radius: 15px;
+  width: 300px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s;
+}
+
+.capitulo:hover { transform: translateY(-4px); }
+
+.capitulo img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.capitulo a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+}

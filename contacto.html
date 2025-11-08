@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Baki Hanma</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="/img/logo.png" alt="logo" class="logo"></a> 
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="temporadas.html">Temporadas</a></li>
+                <li><a href="contacto.html" class="activo">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contacto">
+        <div class="mitad">
+            <form id="form-contacto" class="carta">
+                <h2>Formulario de Contacto</h2>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <p id="mensaje-form"></p>
+        </div>
+
+        <div class="mitad">
+            <div class="carta">
+                <h2>Ubicación</h2>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1304715.5300599497!2d-75.37380020159088!3d40.57639965056946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808e35a0d3457091%3A0xdebdf28350f4befc!2sNetflix%20-%20Building%20E%20-%20Main%20Lobby!5e0!3m2!1ses-419!2sar!4v1762557437901!5m2!1ses-419!2sar"
+                    width="100%" height="250" allowfullscreen="" loading="lazy">
+                </iframe>
+
+                <p>121 Albright Way, Los Gatos, California, Estados Unidos</p>
+                <p>Correo: <a href="mailto:info@netflix.com">info@netflix.com</a></p>
+                <p>Teléfono: <a href="tel:+14085400060">+1 408-540-0060</a></p>
+                <p>Seguinos en nuestras redes:</p>
+        <div>
+            <a href="https://www.instagram.com/netflix/" target="_blank">
+            <img src="/img/insta.png" alt="Instagram" width="auto">
+        </a>
+        <a href="https://www.facebook.com/netflix" target="_blank">
+            <img src="/img/face.png" alt="Facebook" width="auto">
+        </a>
+        <a href="https://twitter.com/netflix" target="_blank">
+            <img src="/img/x.png" alt="Twitter" width="auto">
+        </a>
+        </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Baki Hanma | Sitio de fans sin fines comerciales.</p>
+    </footer>
+
+    <!-- 
+    Profe: No utilicé PHP ni la librería PHPMailer para el envío de correos electrónicos,
+    ya que el trabajo corresponde a un sitio web de baja complejidad y no incluye el uso de PHP por lo que tengo entendido.
+    -->
+
+    <script src="/jss/contacto.js"></script>
+</body>
+</html>
+
+
+
+
+
+

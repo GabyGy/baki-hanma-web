@@ -1,0 +1,64 @@
+main.contacto {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+}
+
+.mitad {
+  width: 50%;
+  flex: 1 1 400px;
+  max-width: 500px;
+}
+
+#form-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 25px;
+  background-color: rgba(128, 128, 128, 0.3);
+  border-radius: 25px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+#form-contacto label { font-weight: bold; }
+
+#form-contacto input,
+#form-contacto textarea {
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+#form-contacto input:focus,
+#form-contacto textarea:focus {
+  outline: 2px solid #e50914;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+#form-contacto button {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#form-contacto button:hover { background-color: #b00610; }
+
+iframe {
+  border-radius: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+
+
+       
+
+    
